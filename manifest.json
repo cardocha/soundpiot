@@ -22,21 +22,19 @@
         "dark": "icons/soundpiot-48.png",
         "size": 32
     }],
-    "default_title": "Beastify",
-    "default_popup": "popup/choose_beast.html"
+    "default_title": "Soundpiot",
+    "default_popup": "popup/sp_popup.html"
   },
 
    "content_scripts": [
      {
        "matches": ["*://*.soundcloud.com/*"],
-       "js": ["content_scripts/beastify.js"]
+       "js": ["content_scripts/sp.js"]
      }
    ],
 
   "web_accessible_resources": [
-    "beasts/frog.jpg",
-    "beasts/turtle.jpg",
-    "beasts/snake.jpg"
+  
   ]
 
 }
