@@ -1,0 +1,110 @@
+html, body {
+  padding: 0px;
+  margin:0 auto;
+  background: #f98e0e;
+}
+body{
+    border: 3px solid #f98e0e;
+    display: inline-block;
+}
+#popup-content{
+  padding: 10px;
+  text-align: center;
+  background: #FFF;
+  min-height:120px;
+  min-width: 160px;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  margin: 0 auto;
+  padding: 2px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.beast:hover {
+  background-color: #CFF2F2;
+}
+
+.beast {
+  background-color: #E5F2F2;
+}
+
+.reset {
+  background-color: #FBFBC9;
+}
+
+.reset:hover {
+  background-color: #EAEA9D;
+}
+.btn-player{
+  display: inline-block;
+}
+
+.btn-player:active {
+  transform: translateY(1.5px);
+}
+
+.music-title{
+  font-size: 12px;
+  color:lightgray;
+  display: inline-block;
+}
+.music-author{
+  font-size: 14px;
+  color:gray;
+  display: block;
+}
+.music-image{
+  display:inline-block;
+}
+.music-image-container{
+  display: block;
+  text-align: center;
+}
+.music-text-container{
+  text-align: center;
+  margin-top: 6px;
+  display: block;
+}
+.truncate {
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container-buttons{
+  margin-top: 10px;
+}
+.error-popup{
+   color:#f50;
+   font-weight: lighter;
+   font-size: 11px;
+   font-style: italic;
+   font-family: fantasy;
+}
+.error-msg-container{
+    padding:30px;
+    text-align: center;
+}
+.img-error{
+    margin-top: 20px;
+    display:inline-block;
+}
+.img-error-container{
+    display:block;
+    width: 100%;
+    text-align: center;
+}
+.btn-like{
+  cursor:pointer;
+  display: inline-block;
+}
+.btn-like:active {
+  transform: translateY(2px);
+}

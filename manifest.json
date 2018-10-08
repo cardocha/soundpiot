@@ -1,0 +1,42 @@
+{
+
+  "description": "Adds a simple player to toolbar. You can use play, pause, next, previous and like commands, without been on a Soundcloud Tab",
+  "manifest_version": 2,
+  "name": "Soundpiot",
+  "version": "1.0",
+  "homepage_url": "https://gpeogjer.com.br",
+  "icons": {
+    "48": "icons/soundpiot-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "tabHide"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/soundpiot-48.png",
+    "theme_icons": [{
+        "light": "icons/soundpiot-48.png",
+        "dark": "icons/soundpiot-48.png",
+        "size": 32
+    }],
+    "default_title": "Beastify",
+    "default_popup": "popup/choose_beast.html"
+  },
+
+   "content_scripts": [
+     {
+       "matches": ["*://*.soundcloud.com/*"],
+       "js": ["content_scripts/beastify.js"]
+     }
+   ],
+
+  "web_accessible_resources": [
+    "beasts/frog.jpg",
+    "beasts/turtle.jpg",
+    "beasts/snake.jpg"
+  ]
+
+}

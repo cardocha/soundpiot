@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="choose_beast.css"/>
+  </head>
+
+<body>
+  <div id="popup-content">
+    <div class="music-info-container">
+      <div class='music-image-container'>
+          <span  class="music-image"></span>
+      </div>
+      <div class="music-text-container">
+          <span class="music-author truncate"></span>
+      </div>
+      <div class="music-text-container">
+          <span class="music-title truncate"></span>
+      </div>
+      <div class="container-buttons">
+          <div class="button btn-player btn-prev"><img class='img-previous' width="24px" height="24px" src="icons/previous.png" /></div>
+          <div class="button btn-player btn-play"><img class='img-play' width="24px" height="24px" src="icons/play.png" /></div>
+          <div class="button btn-player btn-next"><img class='img-next' width="24px" height="24px" src="icons/next.png" /></div>
+      </div>
+      <div class='like-button-container'>
+           <div class="btn-like"><img class='img-like' width="24px" height="24px" src="icons/like.png" /></div>
+      </div>
+    </div>
+    <div class="error-popup">
+         <div class='error-msg-container'>
+              <span class='error-msg'>Open a <a href="https://soundcloud.com/" target="_blank">Soudcloud</a> Tab and <br> log-in to enable the player</span>
+              <div class='img-error-container'>
+                  <img src="/icons/soundpiot-48.png" width="32px" height="32px" class='img-error'>
+              </div>
+         </div>
+    </div>
+  </div>
+  <div id="error-content" class="hidden">
+    <p>Can't beastify this web page.</p><p>Try a different page.</p>
+  </div>
+  <script src="choose_beast.js"></script>
+</body>
+
+</html>
