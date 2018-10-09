@@ -3,7 +3,7 @@
   "description": "Adds a simple player to toolbar. You can use play, pause, next, previous and like commands, without been on a Soundcloud Tab",
   "manifest_version": 2,
   "name": "Soundpiot",
-  "version": "1.0",
+  "version": "1.0.1",
   "homepage_url": "https://gpeogjer.com.br",
   "icons": {
     "48": "icons/soundpiot-48.png"
