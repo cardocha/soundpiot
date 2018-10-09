@@ -5,7 +5,7 @@ A Simple Player addon for Firefox
 
 
 ## Firefox Addon Page
-https://addons.mozilla.org/pt-BR/firefox/addon/soundpiot/
+https://addons.mozilla.org/en-US/firefox/addon/soundpiot/
 
 ## Getting Started
 Edit the source from any text editor, is just html, css and plain js.
