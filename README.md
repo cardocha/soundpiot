@@ -1,7 +1,7 @@
 # Soundpiot
 A Simple Player addon for Firefox
 
-![alt text](https://a.fsdn.com/con/app/proj/justplaymp3/screenshots/Mp3Player.png/1)
+![alt text](https://raw.githubusercontent.com/cardocha/soundpiot/master/screenshot.png)
 
 
 ## Getting Started
