@@ -1,7 +1,7 @@
-const PLAY_ICON_URL = "icons/play.png";
-const PAUSE_ICON_URL = "icons/pause.png";
-const LIKE_ICON_URL = "icons/like.png";
-const LIKED_ICON_URL = "icons/liked.png"
+const PLAY_ICON_URL = "icons/play.svg";
+const PAUSE_ICON_URL = "icons/pause.svg";
+const LIKE_ICON_URL = "icons/like.svg";
+const LIKED_ICON_URL = "icons/liked.svg"
 const PAUSE_COMMAND = "pause";
 const PLAY_COMMAND = "play";
 const LIKE_COMMAND = "like"
@@ -24,6 +24,7 @@ let playerContent;
 let errorPopupContent;
 let isPlaying;
 let soundCloudChecker;
+let hideTabButton;
 
 setInitialState();
 checkForSoundCloudTab();
@@ -153,6 +154,7 @@ function setInitialState(){
   musicTitle = document.querySelector(".music-title");
   playerContent = document.querySelector('.music-info-container');
   errorPopupContent = document.querySelector('.error-popup');
+  hideTabButton = document.querySelector('.btn-hide-sc-tab')
   soundCloudChecker = undefined;
   setplayerListeners();
 }

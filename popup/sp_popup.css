@@ -1,10 +1,10 @@
 html, body {
   padding: 0px;
   margin:0 auto;
-  background: #f98e0e;
+  background: #ff6300;
 }
 body{
-    border: 3px solid #f98e0e;
+    border: 3px solid #ff6300;
     display: inline-block;
 }
 #popup-content{
@@ -107,4 +107,23 @@ body{
 }
 .btn-like:active {
   transform: translateY(2px);
+}
+.hide-sc-tab-container{
+  bottom: 0px;
+  display: none;
+  text-align: center;
+  padding:5px;
+}
+.tab-visible-msg{
+  font-size: 10px;
+  color: #ff6300;
+  font-style: italic;
+  font-family: fantasy;
+}
+.img-hide-sc-tab{
+  display: inline-block;
+  margin-top: 3px;
+}
+.btn-hide-sc-tab{
+  cursor: pointer;
 }
