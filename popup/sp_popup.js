@@ -85,8 +85,8 @@ function performLikeClick(){
 }
 
 function setCurrentMusicInfo(musicInfo){
-    musicTitle.innerHTML = musicInfo.title;
-    musicAuthor.innerHTML = musicInfo.author;
+    musicTitle.innerHTML = sanitizeString(musicInfo.title);
+    musicAuthor.innerHTML = sanitizeString(musicInfo.author);
     musicImage.style.backgroundImage = musicInfo.image;
     likeButtonImage.setAttribute("src", musicInfo.liked ? LIKED_ICON_URL : LIKE_ICON_URL);
     musicImage.style.width = "50px";
@@ -171,6 +171,10 @@ function setplayerListeners(){
   likeButton.onclick = function(){
       performLikeClick();
   }
+}
+function sanitizeString(str){
+    str = str.replace(/([^a-z0-9áéíóúñü_-\s\.,]|[\t\n\f\r\v\0])/gim,"");
+    return str.trim();
 }
 
 function handleMessage(request, sender, sendResponse) {
