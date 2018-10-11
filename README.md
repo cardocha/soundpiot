@@ -8,7 +8,7 @@ A Simple Player addon for Firefox
 https://addons.mozilla.org/en-US/firefox/addon/soundpiot/
 
 ## Getting Started
-Edit the source from any text editor, is just html, css and plain js.
+Edit the source from any text editor,it is just html, css and plain js.
 
 ### Prerequisites
 
