@@ -84,11 +84,25 @@ function performLikeClick(){
    getSoundCloudTab().then(sendLikeMusicCommand, onError);
 }
 
+function performImageClick(){
+	getSoundCloudTab().then(setSoundcloudTabActive, onError);
+  }
+
+function setSoundcloudTabActive(tabs){
+	if(tabs.length > 0 ){
+		browser.tabs.update(tabs[0].id, {
+		   active: true
+		});
+	}
+}
+
+
+
 function setCurrentMusicInfo(musicInfo){
     musicTitle.innerHTML = sanitizeString(musicInfo.title);
     musicAuthor.innerHTML = sanitizeString(musicInfo.author);
     musicImage.style.backgroundImage = musicInfo.image;
-    likeButtonImage.setAttribute("src", musicInfo.liked ? LIKED_ICON_URL : LIKE_ICON_URL);
+	likeButtonImage.setAttribute("src", musicInfo.liked ? LIKED_ICON_URL : LIKE_ICON_URL);
     musicImage.style.width = "50px";
     musicImage.style.height = "50px";
 }
@@ -171,6 +185,10 @@ function setplayerListeners(){
   likeButton.onclick = function(){
       performLikeClick();
   }
+  musicImage.onclick = function() {
+	  performImageClick();
+  }
+   
 }
 function sanitizeString(str){
     str = str.replace(/([^a-z0-9áéíóúñü_-\s\.,]|[\t\n\f\r\v\0])/gim,"");
