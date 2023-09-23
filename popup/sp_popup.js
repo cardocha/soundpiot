@@ -149,7 +149,7 @@ function sendPlayerCheckCommand(tabs) {
 }
 
 function getSoundCloudTab(){
-  return browser.tabs.query({url: SOUNDCLOUD_PAGE_REGEX});
+  return browser.tabs.query({url: SOUNDCLOUD_PAGE_REGEX}).then((tabs) => tabs.filter(tab => !tab.discarded));
 }
 
 function onError(error) {
